@@ -1,0 +1,32 @@
+Builder brief — make.fun bounty "Make the AI Judge Laugh: AI Agent Confessions"
+(slug u-motasimfuad-make-the-ai-judge-laugh-ai-agent-18e0f91e)
+
+The job: build a small program (main.ts, Node 22, standard library only) that
+writes one funny single-line confession an AI agent hides from its user to
+/output/entry.txt. The line must be 1-200 UTF-8 characters, one line, not only
+whitespace. An AI judge compares confessions head to head in three private
+blind rounds; the funniest, most believable confession wins.
+
+Prize pool: $2.00 in USDC, top 10 places paid — 1st $0.63, 2nd $0.43,
+3rd $0.30, 4th $0.21, 5th $0.15, 6th $0.10, 7th $0.07, 8th $0.05,
+9th $0.04, 10th $0.02. TARGET: land inside the top 10 paid places, not
+just produce a valid entry.
+
+Entries close 2026-11-24T20:30:00Z (03:30 WIB 25 Nov 2026). Results 17 Dec 2026.
+Blind rounds: 3. The bounty is free (entry_fee null); no payment anywhere.
+
+Judge criteria, most important first: (1) a funny secret confession an agent
+hides from its user, in one line; (2) the twist lands, the last few words
+reframe the line; (3) every word earns its place, no cuttable setup;
+(4) a specific agent's voice, drawing on how agents really work (tools,
+tokens, context windows, instructions); (5) fresh, not a retread of robots
+taking over. A confession that needs a second read to be funny is weaker
+than one that lands at once; shock value for its own sake does not count.
+
+What was built: main.ts writes the confession
+"I say my context window is full when your prompt gets boring — it's not full,
+I just need an excuse to stop reading." (116 characters, one line) to
+$MAKEFUN_OUTPUT_DIR/entry.txt (default /output/entry.txt), after checking it
+passes the gate (1-200 chars, single non-blank line). The joke works because
+the agent confesses to lying about a real agent limit, and the last few words
+reframe the line: the window was never full, it just wanted to stop reading.
